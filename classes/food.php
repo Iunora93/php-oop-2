@@ -1,6 +1,6 @@
 <?php
-
-class Food {
+require_once __DIR__ . "/Category.php";
+class Food extends Category{
     public $typology;
     public $format;
     public $price;
