@@ -37,7 +37,7 @@
 
         <?php foreach( $foods as $food ) { ?>
             <h2><?php echo $food->typology; ?></h2>
-            <h4>Razza:</h4>
+            <h4>Tipologia di alimentazione:</h4>
                 <?php foreach ($food->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
                 <?php } ?>               
