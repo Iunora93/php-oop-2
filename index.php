@@ -53,6 +53,7 @@
                 <?php foreach ($toy->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
                 <?php } ?> 
+                <li><?php echo $toy->price; ?></li>
                 <li><?php echo $toy->correctprice($price); ?></li>            
         <?php } ?>                         
             <?php } ?>             
