@@ -1,9 +1,10 @@
 <?php
 require_once __DIR__ . "/Category.php";
+require_once __DIR__ ."/../traits/Typologyitem.php";
 class Food extends Category{
-    public $typology;
-    public $format;
-    public $price;
+    use Typologyitem;
+    use Formatitem;
+    use Priceitem;
 
     public function __construct(array $typology, array $format, float $price)
     {
