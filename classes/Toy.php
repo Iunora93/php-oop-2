@@ -13,10 +13,16 @@ class Toy extends Category{
      $this->price = $price;
     }
     function correctprice($price){
-        if(!is_int($price)){
-            throw new Exception("inserire un importo corretto");
+        try {
+            if (!is_int($price)){
+                throw new Exception("Non è un numero");
+            } else{
+			
+                 $this->price = $price;
+			}
+            } catch (Exception $e){
+                echo "Eccezione: " . $e->getMessage();
         }
-        return $this->$price;
     }
 }
 
