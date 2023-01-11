@@ -16,7 +16,7 @@
     
 
     $toys = [
-        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 43,50),
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 10,50),
     ];
 
     
@@ -42,6 +42,7 @@
                     <h4>Tipologia di alimentazione:</h4>
                     <?php foreach ($food->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
+                    <li><?php echo $food->price; ?> €</li>
                 <?php } ?> 
                 <h4>Formato:</h4> 
                 <?php foreach ($food->format as $form) { ?>
@@ -52,7 +53,7 @@
                 <?php foreach ($toy->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
                 <?php } ?> 
-                <li><?php echo $toy->price; ?></li>            
+                <li><?php echo $toy->price; ?> €</li>            
         <?php } ?>                         
             <?php } ?>             
         <?php } ?>
